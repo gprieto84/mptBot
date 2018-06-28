@@ -1,0 +1,11 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{title}} - Bot</title>
+        {% else %}
+        <title>Welcome - Bot</title>
+        {% endif %}
+    </head>
+    <div><a href='/index'>Home</a></div>
+    {% block content %} {% endblock %}
+</html>
